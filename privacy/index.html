@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<!--
+  Proviant's privacy policy, as a self-contained static page.
+
+  The canonical text is pantry/docs/privacy_policy.md, which also records
+  what in the code backs each claim. Edit there first, then mirror here.
+
+  Nothing is loaded from anywhere: no fonts, no scripts, no analytics. A
+  privacy policy that phones a CDN is a poor advertisement for itself.
+
+  Not published yet, by decision (2026-09-11) — see pantry/docs/privacy_policy.md.
+  To publish: put this repo's `site/` directory in a public repo (or as its
+  `docs/` folder) and switch on GitHub Pages. The resulting URL goes in App
+  Store Connect, and only then is the in-app Settings row worth building: a
+  row pointing at a dead URL is worse than no row.
+-->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proviant — Privacy Policy</title>
+<meta name="description" content="Proviant stores your pantry on your own device. No accounts, no analytics, no advertising, no server.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --bg: #fbfaf7;
+    --panel: #ffffff;
+    --ink: #1f1d1a;
+    --ink-soft: #5d5851;
+    --rule: #e4e0d8;
+    --accent: #3f6b4a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181a;
+      --panel: #1d2022;
+      --ink: #e8e6e2;
+      --ink-soft: #a6a19a;
+      --rule: #2e3235;
+      --accent: #8fbf9c;
+    }
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    padding: 2.5rem 1.25rem 5rem;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  main {
+    max-width: 43rem;
+    margin: 0 auto;
+  }
+
+  header {
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    font-size: 1.85rem;
+    line-height: 1.2;
+    margin: 0 0 .4rem;
+    letter-spacing: -0.01em;
+  }
+
+  .updated {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: .95rem;
+  }
+
+  h2 {
+    font-size: 1.15rem;
+    margin: 2.5rem 0 .75rem;
+    letter-spacing: -0.005em;
+  }
+
+  p, li { margin: 0 0 .9rem; }
+  ul { padding-left: 1.4rem; }
+  li { margin-bottom: .45rem; }
+
+  .lede {
+    background: var(--panel);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    border-radius: 6px;
+    padding: 1.1rem 1.25rem .3rem;
+    margin-bottom: 2rem;
+  }
+
+  strong { font-weight: 650; }
+
+  a {
+    color: var(--accent);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    overflow-wrap: break-word;
+  }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    color: var(--ink-soft);
+    font-size: .92rem;
+  }
+
+  @media (min-width: 40rem) {
+    body { padding-top: 4rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+<header>
+  <h1>Proviant — Privacy Policy</h1>
+  <p class="updated">Last updated 11 September 2026</p>
+</header>
+
+<div class="lede">
+  <p>Proviant has no accounts, no analytics, no advertising and no server of
+  ours. Everything you put into it — your food, your household, your photos —
+  is stored on your own device and is not sent to us. We could not read it if
+  we wanted to.</p>
+</div>
+
+<h2>Who is responsible</h2>
+
+<p>Proviant is made by Patrik Lackström, an independent developer in Sweden.
+Questions about this policy:
+<a href="mailto:plackstrom@outlook.com">plackstrom@outlook.com</a>.</p>
+
+<p>Under the EU General Data Protection Regulation that makes him the data
+controller. As set out below, the app itself collects no personal data, so in
+practice the only thing this applies to is an email you choose to send.</p>
+
+<h2>What the app stores on your device</h2>
+
+<p>Everything you enter, and nothing more:</p>
+
+<ul>
+  <li>the food you own — products, barcodes, quantities, expiry dates, where
+  in the kitchen it is kept;</li>
+  <li>product photos, whether you took them or the app downloaded them;</li>
+  <li>your household — a name, and optionally sex, life stage or date of
+  birth for each member, which the app uses only to work out how much energy
+  the household needs per day;</li>
+  <li>what has been eaten, wasted or given away, and when;</li>
+  <li>your shopping list, meal plan, recipes, food tags and stockpile
+  targets;</li>
+  <li>your settings — language, units, theme, which optional features are
+  on.</li>
+</ul>
+
+<p>All of it lives in a database inside the app's own private storage area on
+your device, alongside the photos. None of it is sent to us. Deleting the app
+deletes all of it, and there is no copy anywhere else unless you made one
+yourself using Export or one of the sharing options below.</p>
+
+<h2>What the app sends over the internet</h2>
+
+<p>Three things, and nothing else.</p>
+
+<p><strong>1. Barcode lookups at Open Food Facts.</strong> When you scan a
+barcode, the app asks the Open Food Facts database what product it is. The
+request contains the barcode, the name of the app, the name of your device's
+operating system (for example “ios”), and a contact address for the app — not
+yours. It contains nothing else: not the rest of your pantry, not your
+location, and no identifier for you or your phone.</p>
+
+<p>Open Food Facts is an independent non-profit association, not us. Like any
+web server, theirs records the requests it receives, which includes the IP
+address they came from. Their own privacy policy is at
+<a href="https://world.openfoodfacts.org/privacy">world.openfoodfacts.org/privacy</a>.
+If you never scan a barcode, this request is never made — you can enter
+everything by hand.</p>
+
+<p><strong>2. Product photos from Open Food Facts.</strong> If a product you
+scanned has a picture in their database, the app downloads it and stores it on
+your device.</p>
+
+<p><strong>3. Importing a recipe from a web address — only if you turn it
+on.</strong> This is off when the app is installed. With it on, pasting a link
+makes the app fetch that page and read the recipe out of it. The site you
+pasted sees the request, much as it would if you had opened the page in a
+browser.</p>
+
+<p>There is no analytics, no crash reporting, no advertising and no tracking
+of any kind — not in the app, and not in any library it is built on. Proviant
+does not track you across other apps or websites, which is why it never asks
+you for permission to.</p>
+
+<h2>Sharing a pantry between devices</h2>
+
+<p>This is optional and off until you set it up. When you do, the data is
+encrypted before it goes anywhere.</p>
+
+<p>Pairing two devices by QR code creates an encryption key that stays on
+those devices. It is never sent to us — we have no server to send it to.
+Everything that then travels between them is sealed with that key, whether you
+carry it as an exported file, put it in a shared cloud folder, or use iCloud.
+So the cloud provider holding the file holds bytes it cannot read, and so
+would we.</p>
+
+<p>One thing is deliberately outside the encryption. A file placed in a shared
+folder is named with the sending device's identifier and the time it was
+written, so that another device can recognise and skip its own files without
+having to decrypt them first. That identifier is a random value the app
+generated for itself — not your phone's serial number, not an advertising
+identifier, not anything the operating system supplies. Nothing about your
+food appears in a file name.</p>
+
+<p>iCloud sync is not enabled in the released app.</p>
+
+<h2>Camera and photos</h2>
+
+<p>The camera is used for two things: reading barcodes, and taking a photo of
+a product. Reading a barcode happens entirely on your device — no picture is
+uploaded in order to decode one. A photo you take, or one you pick from your
+library, is scaled down and stored in the app's own storage. Proviant does not
+read your photo library for any other purpose.</p>
+
+<h2>Notifications</h2>
+
+<p>Expiry reminders are scheduled by your own device from the dates you
+entered. There is no push server, so nothing leaves the device to produce
+one.</p>
+
+<h2>Purchases</h2>
+
+<p>Proviant Plus is a one-time purchase, handled entirely by the App Store.
+The payment is between you and Apple; we never see your name, your card or
+your address. The app keeps a single local note that the purchase was made, so
+the features stay unlocked when you have no signal.</p>
+
+<h2>If you send feedback</h2>
+
+<p>“Send feedback” opens your own mail app with the subject line already
+filled in. Nothing is sent until you send it. If you do write, your message
+and your address arrive in an ordinary mailbox, and are used to reply to you
+and to fix what you reported — nothing else, and they are not passed to
+anyone. Ask, and they are deleted.</p>
+
+<h2>Children</h2>
+
+<p>Proviant is a tool for keeping track of a household's food. It collects no
+personal data from anyone, of any age.</p>
+
+<h2>Your rights</h2>
+
+<p>The GDPR gives you the right to ask what personal data is held about you,
+and to have it corrected or deleted. We hold none, so there is nothing to
+answer — except for an email you have sent us, which is deleted on
+request.</p>
+
+<p>Your pantry data is a separate matter, because it is yours and already in
+your hands: Settings → Data &amp; sync will export all of it, and deleting the
+app erases it.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>Any change is published on this page with a new date at the top.</p>
+
+<footer>
+  <p>Proviant · <a href="mailto:plackstrom@outlook.com">plackstrom@outlook.com</a></p>
+</footer>
+
+</main>
+</body>
+</html>
