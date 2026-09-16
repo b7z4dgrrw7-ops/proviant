@@ -123,7 +123,7 @@
 
 <header>
   <h1>Proviant — Privacy Policy</h1>
-  <p class="updated">Last updated 11 September 2026</p>
+  <p class="updated">Last updated 16 September 2026</p>
 </header>
 
 <div class="lede">
@@ -207,19 +207,48 @@ encrypted before it goes anywhere.</p>
 <p>Pairing two devices by QR code creates an encryption key that stays on
 those devices. It is never sent to us — we have no server to send it to.
 Everything that then travels between them is sealed with that key, whether you
-carry it as an exported file, put it in a shared cloud folder, or use iCloud.
-So the cloud provider holding the file holds bytes it cannot read, and so
-would we.</p>
+carry it as an exported file, put it in a shared cloud folder, hand it
+straight to another phone on your Wi-Fi, or use iCloud. So the cloud provider
+holding the file holds bytes it cannot read, and so would we.</p>
 
-<p>One thing is deliberately outside the encryption. A file placed in a shared
-folder is named with the sending device's identifier and the time it was
-written, so that another device can recognise and skip its own files without
-having to decrypt them first. That identifier is a random value the app
-generated for itself — not your phone's serial number, not an advertising
-identifier, not anything the operating system supplies. Nothing about your
-food appears in a file name.</p>
+<p><strong>Nearby devices is a separate switch, off until you turn it
+on.</strong> With it on, the app looks for other phones in your household on
+the same Wi-Fi and sends your pantry to them directly — nothing goes through
+the internet or through anyone's server, ours included, and the phones
+exchange the same sealed bytes everything else does. Your device asks for
+permission the first time, because iOS requires it for anything that looks
+around the local network. Turning the switch off stops it, and the app also
+stops looking whenever it is not the app you are using.</p>
 
-<p>iCloud sync is not enabled in the released app.</p>
+<p>Three things are deliberately outside the encryption, and they are the
+only three. A file placed in a shared folder is named with the sending device's
+identifier and the time it was written, so that another device can recognise
+and skip its own files without having to decrypt them first. And a phone
+looking for nearby devices announces that same identifier along with a short
+fingerprint of your household's key, so that two phones can tell whether they
+belong to the same household before they connect — the fingerprint is derived
+from the key and cannot be turned back into it, and it changes if the key
+does.</p>
+
+<p>That identifier is a random value the app generated for itself — not your
+phone's serial number, not an advertising identifier, not anything the
+operating system supplies. Nothing about your food appears in a file name or
+in what a phone announces.</p>
+
+<p><strong>And if you share the pantry over iCloud, Apple knows who you
+shared it with.</strong> That is the third thing, and it is unavoidable:
+inviting someone is done through Apple's own sharing, so Apple holds the list
+of Apple IDs on the share in order to let them in at all. What it does not
+hold is anything about your food — every changeset in the shared area is
+sealed with your household's key before it is written, and that key never goes
+to iCloud. The share is labelled "Proviant" and nothing else: not your
+household's name, not a member's.</p>
+
+<p><strong>iCloud sharing is off until you turn it on, and it takes two steps
+on purpose.</strong> The invitation link lets another person's iCloud reach
+the sealed data; it does not contain the key that opens it. Pairing that phone
+by QR code is what carries the key, and until you do, an invited phone holds
+bytes it cannot read. The app says so before it makes the link.</p>
 
 <h2>Camera and photos</h2>
 
